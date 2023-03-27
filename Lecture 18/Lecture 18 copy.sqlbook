@@ -157,13 +157,17 @@ Try it yourself!
 SELECT * FROM us_congress_members
 ```
 -- SQLBook: Code
-# Write your own code
+-- Write your own code
 -- Note in the instructor's computer this is:
 -- You just have to change the FROM argument
 --
 -- COPY us_congress_members
 -- FROM 'D:\GitHub\qtm151spring2023\Lecture 18\data\us_congress_members.csv'
 -- WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
+
+COPY us_congress_members
+FROM '/private/tmp/data/us_congress_members.csv'
+WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 
 
 
@@ -251,7 +255,7 @@ Merge Databases
 SELECT * 
 FROM bills_actions
 LEFT JOIN us_congress_members
-ON bills_actions.member_id  = bills_actions.member_id;
+ON us_congress_members.member_id  = bills_actions.member_id;
 
 -- Note: This command may take a few seconds to run. This is normal
 -- In the instructor's computer this took 2 min but may take more 
