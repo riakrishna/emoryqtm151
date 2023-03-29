@@ -89,6 +89,7 @@ with column names and data types
 - You will need to use the SQL command ``` CREATE TABLE ```
 
 -- SQLBook: Code
+# Create table – look at assignment 8
 
 -- SQLBook: Markup
 
@@ -103,6 +104,12 @@ from ".csv" files using the command <br>
 - Display the dataset using ``` SELECT * FROM .... ```
 - See Lecture 18 for more details
 
+-- SQLBook: Code
+#go to terminal
+# type open /tmp
+#copy quiz folder into tmp
+#hold option and then copy pathway
+#follow format from lecture 18
 -- SQLBook: Markup
 <font size = "5">
 
@@ -110,6 +117,8 @@ from ".csv" files using the command <br>
 
 - Subset one of the above datasets using ``` WHERE ```
 - Then sort the datasets in ascending or descending order 
+-- SQLBook: Code
+#part c from assignment 8
 -- SQLBook: Markup
 <font size = "5">
 
